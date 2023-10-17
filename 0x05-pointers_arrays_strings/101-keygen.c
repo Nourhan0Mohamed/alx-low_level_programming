@@ -2,30 +2,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 12
+#define PASSWORD_LENGTH 15
 
 /**
- * generate_password - Generates a random password
+ * generate_password - Generates a specific password
  * @password: The buffer to store the generated password
  */
 void generate_password(char *password)
 {
 int i;
 
-srand(time(NULL));
-
 for (i = 0; i < PASSWORD_LENGTH; i++)
-{
-int random_char = rand() % 62;
-
-if (random_char < 26)
-password[i] = 'A' + random_char;
-else if (random_char < 52)
-password[i] = 'a' + (random_char - 26);
-else
-password[i] = '0' + (random_char - 52);
+{password[i] = 'a';
 }
-
 password[PASSWORD_LENGTH] = '\0';
 }
 
