@@ -26,5 +26,5 @@ generate_password(password);
 
 printf("%s\n", password);
 
-return 0;
+return 0; /*Change the return value to 0*/
 }
