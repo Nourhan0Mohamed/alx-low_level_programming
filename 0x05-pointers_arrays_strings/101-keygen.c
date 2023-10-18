@@ -13,7 +13,8 @@ void generate_password(char *password)
 int i;
 
 for (i = 0; i < PASSWORD_LENGTH; i++)
-{password[i] = 'a';
+{
+password[i] = 'a';
 }
 password[PASSWORD_LENGTH] = '\0';
 }
